@@ -5,8 +5,8 @@ metadata:
 spec:
   type: NodePort
   selector:
-    app.kubernetes.io/name: nginx
-    #app: nginx
+    #app.kubernetes.io/name: nginx
+    app: nginx
   ports:
     - port: 6000
       # By default and for convenience, the `targetPort` is set to
