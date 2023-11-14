@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: nginx:mainline
+        image: vishalhcl007/adcgallery:99
         ports:
         - containerPort: 80
