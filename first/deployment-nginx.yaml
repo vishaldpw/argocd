@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: vishalhcl007/adcgallery:777
+        image: vishalhcl007/adcgallery:99
         ports:
         - containerPort: 80
