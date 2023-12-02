@@ -5,7 +5,7 @@ metadata:
   namespace: kube-logging
 spec:
   serviceName: elasticsearch
-  replicas: 3
+  replicas: 2
   selector:
     matchLabels:
       app: elasticsearch
@@ -19,11 +19,11 @@ spec:
         image: docker.elastic.co/elasticsearch/elasticsearch:7.2.0
         resources:
             limits:
-              cpu: 1000m
-              memory: 2Gi
-            requests:
               cpu: 500m
               memory: 1Gi
+            requests:
+              cpu: 100m
+              memory: 0.5Gi
         ports:
         - containerPort: 9200
           name: rest
