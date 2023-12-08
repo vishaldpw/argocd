@@ -39,3 +39,4 @@ spec:
         - name: mysql-volume
           persistentVolumeClaim:
             claimName: mysql-pvc
+            ### Nil
