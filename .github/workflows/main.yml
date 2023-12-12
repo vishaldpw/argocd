@@ -1,0 +1,20 @@
+name: Docker Build and Run
+
+on: [push]
+
+jobs:
+  build-and-run:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Build Docker image
+      run: docker build -t nginx .
+
+    - name: Run Docker container
+      run: docker run -d --name my-container nginx
+
+    - name: Show running containers
+      run: docker ps
