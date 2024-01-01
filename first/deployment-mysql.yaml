@@ -8,7 +8,7 @@ spec:
   resources:
     requests:
       storage: 10Gi
-  storageClassName: hostpath
+  storageClassName: local-path
 ---
 apiVersion: apps/v1
 kind: Deployment
